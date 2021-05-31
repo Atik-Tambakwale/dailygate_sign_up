@@ -74,7 +74,7 @@ class C_signup extends CI_Controller {
 	   $retval = mail ($to,$subject,$message,$header);
 
 	   if( $retval == true ) {
-		   $response=["msg"=>"Message sent successfully..."];
+		   $response=["status"=>200,"msg"=>"Message sent successfully..."];
 	   }else {
 		  $response=["msg"=>"Message could not be sent..."];
 	   }

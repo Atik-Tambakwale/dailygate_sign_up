@@ -14,6 +14,12 @@ $("#signup_form").submit("click",function(e){
             },
             success: function (json) {
                 console.log(json);
+                if(json.status=="200"){
+                    $("#message").html(json.msg);
+                }
+                else {
+                    $("#message").html(json.msg);
+                }
     		},
     		error: function (jqXHR, exception) {
     			toastr.error('Server Error '+jqXHR.status+' code', 'exception is '+exception+' On DailyGate Toturial View');

@@ -70,6 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  <div class="container">
 		  <h1 id="h1Tag">Send email for Sign Up Account</h1>
   		<div class="card" id="body">
+
 			<?php echo form_open('',["id"=>"signup_form",'data-parsley-validate'=>'true']);?>
 				<div class="row">
 					<div class="col-md-6 form-group">
@@ -82,6 +83,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			<?php echo form_close();?>
   		</div>
+        <span id="message" style="
+    position: relative;
+    left: 36%;
+"></span>
   	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
