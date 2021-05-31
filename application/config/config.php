@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/dailygate_sign_up/';
+$config['base_url'] = 'https://devops.dailygate.in/dailygate_sign_up/';
 
 /*
 |--------------------------------------------------------------------------
